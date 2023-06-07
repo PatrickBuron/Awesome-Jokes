@@ -4,61 +4,61 @@
 }
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
-    background-color: white;
+    /* background-color: white; */
     font-family: 'THE LEGO MOVIE', sans-serif;
+    /* background-image: url(assets/img/red-leog.jpg); */
 }
 
+header {
+    text-align: center;
+    background-color: red;
+    min-width: auto;
+}
 
 h1 {
     font-family: LEGO;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.3rem;
+    padding: 0.5rem;
     text-transform: uppercase;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-    background-image: url(assets/img/red-leog.jpg);
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: ;
     padding: 1rem;
-    text-align: center;
 }
 
 .card {
     background-color: transparent;
-    border: none;
-}
-
-.card-img-top {
-    width: 18rem;
-}
-
-.card-img-top-1 {
-    width: 26rem;
+    /* border: none; */
+    text-align: center;
 }
 
 .card-text {
-    /* background-image: url(assets/img/red-leog.jpg); */
-    background-color: rgb(249, 235, 55);
-    margin-top: -2rem;
-}
-
-.card-text-1 {
-    /* background-image: url(assets/img/blue-lego1.jpg); */
     background-color: rgb(72, 120, 198);
-    margin-top: -1.5rem;
 }
 
-.btn-container {
-    text-align: center;
+#card-text-1 {
+    background-color: rgb(249, 235, 55);
 }
+
+#card-img-1 {
+    height: 26rem;
+    width: auto;
+
+}
+
+.btn {
+    background-color: green;
+    font-size: 0.8rem;
+    border: none;
+}
+
+a {}
