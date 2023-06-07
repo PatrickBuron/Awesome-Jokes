@@ -1,0 +1,58 @@
+@font-face {
+    font-family: LEGO;
+    src: url(assets/fonts/LEGO.ttf);
+}
+
+
+body {
+    /* background-image: url(assets/img/yellow-lego.avif); */
+    background-color: white;
+    background-size: contain;
+    font-family: 'THE LEGO MOVIE', sans-serif;
+
+}
+
+
+h1 {
+    font-family: LEGO;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    /* background-color: rgb(249, 235, 55); */
+    background-image: url(assets/img/red-leog.jpg);
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 1rem;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card-img-top {
+    width: 18rem;
+}
+
+.card-img-top-1 {
+    width: 26rem;
+}
+
+.card-text {
+    /* background-image: url(assets/img/red-leog.jpg); */
+    background-color: rgb(249, 235, 55);
+    margin-top: -2rem;
+}
+
+.card-text-1 {
+    /* background-image: url(assets/img/blue-lego1.jpg); */
+    background-color: rgb(72, 120, 198);
+    margin-top: -1.5rem;
+}
