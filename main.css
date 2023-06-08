@@ -53,11 +53,14 @@ p {
     text-align: center;
 }
 
-
-
 #card-img-1 {
-    height: 26rem;
-    width: auto;
+    width: 68%;
+    padding-top: 1.3rem;
+    margin-bottom: -0.7rem;
+}
+
+#card-img-2 {
+    padding-top: 0.5rem;
 
 }
 
