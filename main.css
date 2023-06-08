@@ -62,10 +62,22 @@ p {
 }
 
 .btn {
-    background-color: green;
-    font-size: 0.8rem;
+    padding: 1rem 1.8rem;
+    color: rgb(249, 235, 55);
+    background-color: rgb(195, 24, 22);
+    font-size: 1rem;
+
+}
+
+.btn:hover {
+    color: white;
     border: none;
 }
+
+
+
+
+
 
 .sprechblase4 {
     padding: 1rem;
