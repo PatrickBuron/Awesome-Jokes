@@ -34,9 +34,9 @@ h1 {
 
 p {
     font-size: 1.2rem;
-    color: white;
-    text-shadow: 1px 1px black;
-    padding: 1rem;
+    color: black;
+
+
 }
 
 .card {
@@ -45,13 +45,7 @@ p {
     text-align: center;
 }
 
-.card-text {
-    background-color: rgb(72, 120, 198);
-}
 
-#card-text-1 {
-    background-color: rgb(249, 235, 55);
-}
 
 #card-img-1 {
     height: 26rem;
@@ -65,40 +59,7 @@ p {
     border: none;
 }
 
-/* .sprechblase7 {
-    position: relative;
-    padding: 1rem;
-    border: 4px solid #2651A6;
-    width: 30%;
-    /* margin: 0 auto; */
-/* margin-left: 2rem;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    background: #fff;
-}
 
-.sprechblase7:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 30px;
-    top: 100%;
-    border: 20px solid;
-    border-color: #2651A6 transparent transparent #2651A6;
-}
-
-.sprechblase7:after {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 34px;
-    top: 100%;
-    border: 15px solid;
-    border-color: #ffffff transparent transparent #ffffff;
-} */
 
 .sprechblase4 {
     padding: 1rem;
@@ -108,8 +69,8 @@ p {
     position: relative;
     width: 80%;
     /* margin-left: 8rem; */
-    background: #88b7d5;
-    border: 4px solid #c2e1f5;
+    background: white;
+    border: 4px solid black;
 }
 
 .sprechblase4:after,
@@ -126,14 +87,14 @@ p {
 
 .sprechblase4:after {
     border-color: rgba(136, 183, 213, 0);
-    border-top-color: #88b7d5;
+    border-top-color: white;
     border-width: 20px;
     margin-left: -20px;
 }
 
 .sprechblase4:before {
     border-color: rgba(194, 225, 245, 0);
-    border-top-color: #c2e1f5;
+    border-top-color: black;
     border-width: 26px;
     margin-left: -26px;
 }
