@@ -9,7 +9,11 @@
     box-sizing: border-box;
     /* background-color: white; */
     font-family: 'THE LEGO MOVIE', sans-serif;
-    /* background-image: url(assets/img/red-leog.jpg); */
+
+}
+
+main {
+    background-image: url(assets/img/red-leog.jpg);
 }
 
 header {
@@ -31,13 +35,13 @@ h1 {
 p {
     font-size: 1.2rem;
     color: white;
-    text-shadow: ;
+    text-shadow: 1px 1px black;
     padding: 1rem;
 }
 
 .card {
     background-color: transparent;
-    /* border: none; */
+    border: none;
     text-align: center;
 }
 
@@ -61,4 +65,75 @@ p {
     border: none;
 }
 
-a {}
+/* .sprechblase7 {
+    position: relative;
+    padding: 1rem;
+    border: 4px solid #2651A6;
+    width: 30%;
+    /* margin: 0 auto; */
+/* margin-left: 2rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.sprechblase7:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    top: 100%;
+    border: 20px solid;
+    border-color: #2651A6 transparent transparent #2651A6;
+}
+
+.sprechblase7:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 34px;
+    top: 100%;
+    border: 15px solid;
+    border-color: #ffffff transparent transparent #ffffff;
+} */
+
+.sprechblase4 {
+    padding: 1rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+    width: 80%;
+    /* margin-left: 8rem; */
+    background: #88b7d5;
+    border: 4px solid #c2e1f5;
+}
+
+.sprechblase4:after,
+.sprechblase4:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.sprechblase4:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #88b7d5;
+    border-width: 20px;
+    margin-left: -20px;
+}
+
+.sprechblase4:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: #c2e1f5;
+    border-width: 26px;
+    margin-left: -26px;
+}
