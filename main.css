@@ -7,21 +7,17 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: white; */
     font-family: 'THE LEGO MOVIE', sans-serif;
-
-}
-
-
-main {
-    background-image: url(assets/img/red-leog.jpg);
-    /* padding-top: 1rem; */
 }
 
 header {
     text-align: center;
-    background-color: red;
+    background-color: rgb(195, 24, 22);
     min-width: auto;
+}
+
+main {
+    background-image: url(assets/img/green-lego.jpg);
 }
 
 h1 {
@@ -31,14 +27,20 @@ h1 {
     padding: 0.5rem;
     text-transform: uppercase;
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 4px 4px, yellow 6px 6px;
+}
+
+h2 {
+    text-align: center;
+    background-color: white;
+    width: fit-content;
+    padding: 0.2rem;
+    margin-bottom: 2rem;
 }
 
 p {
     font-size: 1.2rem;
     color: black;
-
-
 }
 
 .row {
@@ -64,8 +66,6 @@ p {
     font-size: 0.8rem;
     border: none;
 }
-
-
 
 .sprechblase4 {
     padding: 1rem;
