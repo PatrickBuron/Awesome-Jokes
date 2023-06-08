@@ -12,8 +12,10 @@
 
 }
 
+
 main {
     background-image: url(assets/img/red-leog.jpg);
+    /* padding-top: 1rem; */
 }
 
 header {
@@ -37,6 +39,10 @@ p {
     color: black;
 
 
+}
+
+.row {
+    padding-top: 2rem;
 }
 
 .card {
