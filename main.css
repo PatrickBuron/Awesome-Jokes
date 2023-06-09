@@ -54,7 +54,9 @@ h2 {
     /* border: 2px solid black; */
     border-radius: 10px;
     /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
-
+    border-left: 1px solid gray;
+    border-right: 1px solid black;
+    border-top: 1px solid gray;
     border-bottom: 6px solid #D95219;
 
 }
