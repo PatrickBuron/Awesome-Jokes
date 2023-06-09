@@ -16,9 +16,11 @@ body {
 }
 
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 6rem;
     background-color: rgb(195, 24, 22);
-    min-width: auto;
+
 }
 
 
@@ -27,10 +29,10 @@ header {
 
 h1 {
     font-family: LEGO;
-    text-align: center;
+
     font-size: 2.3rem;
     letter-spacing: 0.3rem;
-    padding: 0.5rem;
+
     text-transform: uppercase;
     color: white;
     text-shadow: black 3px 2px, yellow 4px 3px;
@@ -149,6 +151,7 @@ p {
 @media only screen and (min-width: 770px) {
     main {
         background-image: url(assets/img/green-lego.jpg);
+        margin-top: 1rem;
     }
 
     body {
@@ -158,4 +161,6 @@ p {
     h1 {
         font-size: 3rem;
     }
+
+
 }
