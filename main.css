@@ -84,20 +84,35 @@ p {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUTTONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.btn {
-    padding: 1rem;
-    color: black;
-    background-color: white;
-    border: 2px solid rgb(195, 24, 22);
-    border-radius: 20px;
-    font-size: 1.2rem;
-    transition: all 0.3s ease-in-out;
-    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+
+
+
+.button {
+    border-radius: 10px;
+    width: 180px;
+    height: 85px;
+    margin: 10% 0px 0px 6.5%;
+    float: left;
+    color: #F4F4F4;
+    text-align: center;
+    font-size: 20px;
+    /* -bottom: 4rem; */
+    line-height: 0%;
+    transition: .1s;
+    cursor: pointer;
+    background-color: #0938E9;
+    border-bottom: 6px solid #041B78;
+
+
+
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.button:active {
+    border-bottom: 6px solid transparent;
+    color: #041B78;
 }
+
+
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  SPECH  BUBBLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -108,7 +123,7 @@ p {
     border-radius: 20px;
     position: relative;
     width: 80%;
-    min-height: 10rem;
+    min-height: 15rem;
     background: white;
     border: 2px solid black;
 
