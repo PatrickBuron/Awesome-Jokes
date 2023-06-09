@@ -21,12 +21,9 @@ header {
     min-width: auto;
 }
 
-.card {
-    margin-bottom: 4rem;
 
-}
 
-.container-fluid {}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TYPOGRAPHIE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 h1 {
     font-family: LEGO;
@@ -52,7 +49,11 @@ h2 {
 p {
     font-size: 1.2rem;
     color: black;
+    text-align: center;
 }
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!  CARDS  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .row {
     padding-top: 2rem;
@@ -61,7 +62,8 @@ p {
 .card {
     background-color: transparent;
     border: none;
-    text-align: center;
+    /* text-align: center; */
+    margin-bottom: 4rem;
 }
 
 #card-img-1 {
@@ -74,11 +76,11 @@ p {
     padding-top: 0.5rem;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUTTONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .btn {
     padding: 1rem;
-    /* color: rgb(249, 235, 55); */
     color: black;
-    /* background-color: rgb(195, 24, 22); */
     background-color: white;
     border: 4px solid rgb(195, 24, 22);
     border-radius: 20px;
@@ -90,17 +92,21 @@ p {
     transform: scale(1.1);
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  SPECH  BUBBLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .sprechblase4 {
+
+
     padding: 1rem;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     position: relative;
     width: 80%;
-    /* margin-left: 8rem; */
+
     background: white;
     border: 4px solid black;
-    z-index: 99;
+
 }
 
 .sprechblase4:after,
@@ -129,13 +135,33 @@ p {
     margin-left: -26px;
 }
 
+
+
+.sprechblase4 p {
+    height: 10rem;
+
+
+
+
+
+
+
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUEERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 @media only screen and (min-width: 770px) {
     main {
-        /* background-color: #F8F0E3; */
         background-image: url(assets/img/green-lego.jpg);
     }
 
     body {
         background-color: white;
+    }
+
+    h1 {
+        font-size: 3rem;
     }
 }
