@@ -95,18 +95,18 @@ p {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  SPECH  BUBBLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .sprechblase4 {
-
-
     padding: 1rem;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     position: relative;
     width: 80%;
-
+    height: 10rem;
     background: white;
     border: 4px solid black;
 
+    display: flex;
+    align-items: center;
 }
 
 .sprechblase4:after,
@@ -136,16 +136,8 @@ p {
 }
 
 
-
 .sprechblase4 p {
-    height: 10rem;
-
-
-
-
-
-
-
+    /* margin-bottom: 0; */
 }
 
 
