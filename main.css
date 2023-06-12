@@ -8,29 +8,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'THE LEGO MOVIE', sans-serif;
+
 }
 
 body {
-    /* background-color: #F8F0E3; */
-    background-color: #01BE02;
 
+    background-color: black;
+}
+
+main {
+    background-color: #FAF9F6;
+    border-radius: 10px;
+    ;
+}
+
+.container-fluid {
+
+    max-width: 90vw;
+
+
+    margin: 0 auto;
 }
 
 header {
     display: flex;
     align-items: center;
     height: 5rem;
-    /* background-color: rgb(247, 237, 82); */
-    background-color: #0938E9;
-    border-radius: 10px;
-    border-left: 1px solid gray;
-    border-right: 1px solid black;
-    border-top: 1px solid gray;
-    border-bottom: 6px solid #041B78;
+    background-color: black;
 
 }
-
-
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TYPOGRAPHIE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -47,13 +53,11 @@ header {
 .title-word-1 {
     --color-1: #F7ED3E;
     --color-2: #FD4919;
-
 }
 
 .title-word-2 {
     --color-1: #FD4919;
     --color-2: #F7ED3E;
-
 }
 
 @keyframes color-animation {
@@ -79,22 +83,15 @@ header {
     }
 }
 
-
 h2 {
     text-align: center;
     letter-spacing: 0.2rem;
-    background-color: rgb(224, 97, 41);
-    color: white;
-    width: fit-content;
-    padding: 0.2rem 0.5rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    border-radius: 10px;
-    border-left: 2px solid gray;
-    border-right: 2px solid black;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid black;
 
+    color: rgb(224, 97, 41);
+
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 
 }
 
@@ -103,7 +100,6 @@ p {
     color: black;
     text-align: center;
 }
-
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!  CARDS  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -114,8 +110,7 @@ p {
 .card {
     background-color: transparent;
     border: none;
-    /* text-align: center; */
-    margin-bottom: 4rem;
+
 }
 
 #card-img-1 {
@@ -131,35 +126,135 @@ p {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUTTONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
-
-
-.button {
-    border-radius: 10px;
-    width: 180px;
-    height: 85px;
+/* .button { */
+/* border-radius: 10px;
+    width: 160px;
+    height: 65px;
     margin: 10% 0px 0px 6.5%;
     float: left;
     color: #F4F4F4;
     text-align: center;
     font-size: 20px;
-    /* -bottom: 4rem; */
+
     line-height: 0%;
     transition: .1s;
     cursor: pointer;
-    background-color: #0938E9;
-    border-bottom: 6px solid #041B78;
 
+    background-color: rgb(224, 97, 41);
+    border-bottom: 6px solid rgb(205, 60, 22);
+    transition: 0.3s; */
 
+/* <!-- HTML !-->
+<button class="button-56" role="button">Button 56</button> */
 
+/* CSS */
+/* .button {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button:hover:after {
+    transform: translate(0, 0);
 }
 
 .button:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button {
+        padding: 0 40px;
+    }
+} */
+
+/* <!-- HTML !-->
+<button class="button-74" role="button">Button 74</button> */
+
+/* CSS */
+.button {
+    background-color: #FAF9F6;
+    border: 2px solid #422800;
+    border-radius: 10px;
+    box-shadow: #422800 4px 4px 0 0;
+    /* color: #422800; */
+    color: rgb(224, 97, 41);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+    color: black;
+    background-color: #F7ED3E;
+}
+
+.button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+/* .button:active {
     border-bottom: 6px solid transparent;
     color: #041B78;
 }
 
-
+.button:hover {
+    color: #F7ED3E;
+} */
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  SPECH  BUBBLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -173,7 +268,6 @@ p {
     min-height: 15rem;
     background: white;
     border: 2px solid black;
-
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     display: flex;
     align-items: center;
@@ -205,18 +299,25 @@ p {
     margin-left: -26px;
 }
 
-
 .sprechblase4 p {
     margin-bottom: 0;
 }
 
 
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUEERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media only screen and (min-width: 765px) {
     main {
-        background-image: url(assets/img/green-lego.jpg);
+        /* background-image: url(assets/img/green-lego.jpg); */
+        background-color: #FAF9F6;
         /* margin-top: 1rem; */
         border-radius: 10px;
         border-left: 1px solid gray;
@@ -224,10 +325,6 @@ p {
         border-top: 1px solid gray;
     }
 
-    body {
-        /* background-color: white; */
-        background-color: black
-    }
 
     h1 {
         font-size: 3rem;
@@ -249,7 +346,6 @@ p {
     }
 }
 
-
 @media only screen and (min-width: 1000px) {
 
     h2 {
@@ -266,10 +362,10 @@ p {
     }
 
     .container-fluid {
-        /* max-height: 90vh; */
+
         max-width: 90vw;
 
-        /* margin: 2rem 2rem; */
+
         margin: 0 auto;
     }
 
