@@ -34,7 +34,7 @@ header {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TYPOGRAPHIE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-h1 {
+/* h1 {
     font-family: LEGO;
 
     font-size: 2.3rem;
@@ -44,7 +44,53 @@ h1 {
     text-transform: uppercase;
 
     text-shadow: black 3px 2px, yellow 4px 3px;
+} */
+
+.title-word {
+    font-family: LEGO;
+    font-size: 2.3rem;
+    color: white;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-shadow: black 3px 2px, yellow 4px 3px;
+    animation: color-animation 4s linear infinite;
 }
+
+.title-word-1 {
+    --color-1: #F7ED3E;
+    --color-2: #FD4919;
+
+}
+
+.title-word-2 {
+    --color-1: #FD4919;
+    --color-2: #F7ED3E;
+
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    25% {
+        color: var(--color-1)
+    }
+
+    50% {
+        color: var(--color-2)
+    }
+
+    75% {
+        color: var(--color-2)
+    }
+
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
 
 h2 {
     text-align: center;
@@ -226,6 +272,10 @@ p {
     .sprechblase4 {
 
         min-height: 18rem;
+    }
+
+    .title-word {
+        font-size: 3rem;
     }
 
 

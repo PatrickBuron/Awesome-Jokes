@@ -1,7 +1,7 @@
-function loadJokes() {
-    getJoke()
-    getJokeOne()
-}
+// function loadJokes() {
+//     getJoke()
+//     getJokeOne()
+// }
 
 const btnEl = document.getElementById("btn");
 const jokeEl = document.getElementById("joke");
