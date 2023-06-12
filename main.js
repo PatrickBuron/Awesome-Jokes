@@ -1,31 +1,7 @@
-// const btnEl = document.getElementById("btn");
-// const jokeEl = document.getElementById("joke");
-
-// const apiKey = "yFswsRpgY2ueBcTFJIapog==pTyQJaymElDinNGg";
-
-// const options = {
-//     method: "GET",
-//     headers: {
-//         "X-Api-key": apiKey,
-//     },
-// }
-
-// const apiURL = "https://api.api-ninjas.com/v1/chucknorris?limit=1"
-
-// async function getJoke() {
-//     const response = await fetch(apiURL, options)
-//     const data = await response.json()
-
-//     jokeEl.innerText = data.joke;
-
-//     // console.log(data.joke)
-// }
-
-// btnEl.addEventListener("click", getJoke)
-
-
-
-
+function loadJokes() {
+    getJoke()
+    getJokeOne()
+}
 
 const btnEl = document.getElementById("btn");
 const jokeEl = document.getElementById("joke");
@@ -46,8 +22,6 @@ async function getJoke() {
     const data = await response.json()
 
     jokeEl.innerText = data.joke;
-
-    // console.log(data.joke)
 }
 
 btnEl.addEventListener("click", getJoke)
@@ -75,8 +49,9 @@ async function getJokeOne() {
     const dataOne = await responseOne.json()
 
     jokeOneEl.innerText = dataOne[0].joke;
-
-    console.log(dataOne[0].joke)
 }
 
 btnOneEl.addEventListener("click", getJokeOne)
+
+// !!!!!!!!!!!!!!!!!!!!! TEST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
