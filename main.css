@@ -8,25 +8,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'THE LEGO MOVIE', sans-serif;
-
 }
 
 body {
+    /* background-color: black; */
 
-    background-color: black;
+    background-color: #F3F6FB;
 }
 
 main {
     background-color: #FAF9F6;
     border-radius: 10px;
-    ;
+    border: 2px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    max-width: 1300px;
 }
 
+
 .container-fluid {
-
     max-width: 90vw;
-
-
     margin: 0 auto;
 }
 
@@ -34,8 +34,8 @@ header {
     display: flex;
     align-items: center;
     height: 5rem;
-    background-color: black;
-
+    /* background-color: black; */
+    background-color: #F3F6FB;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TYPOGRAPHIE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -86,9 +86,7 @@ header {
 h2 {
     text-align: center;
     letter-spacing: 0.2rem;
-
     color: rgb(224, 97, 41);
-
     padding: 0.2rem 0.5rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -126,97 +124,14 @@ p {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUTTONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-/* .button { */
-/* border-radius: 10px;
-    width: 160px;
-    height: 65px;
-    margin: 10% 0px 0px 6.5%;
-    float: left;
-    color: #F4F4F4;
-    text-align: center;
-    font-size: 20px;
-
-    line-height: 0%;
-    transition: .1s;
-    cursor: pointer;
-
-    background-color: rgb(224, 97, 41);
-    border-bottom: 6px solid rgb(205, 60, 22);
-    transition: 0.3s; */
-
-/* <!-- HTML !-->
-<button class="button-56" role="button">Button 56</button> */
-
-/* CSS */
-/* .button {
-    align-items: center;
-    background-color: #fee6e3;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.button:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-}
-
-.button:hover:after {
-    transform: translate(0, 0);
-}
-
-.button:active {
-    background-color: #ffdeda;
-    outline: 0;
-}
-
-.button:hover {
-    outline: 0;
-}
-
-@media (min-width: 768px) {
-    .button {
-        padding: 0 40px;
-    }
-} */
-
-/* <!-- HTML !-->
-<button class="button-74" role="button">Button 74</button> */
-
-/* CSS */
 .button {
-    background-color: #FAF9F6;
+
+    background-color: #F7ED3E;
     border: 2px solid #422800;
     border-radius: 10px;
     box-shadow: #422800 4px 4px 0 0;
-    /* color: #422800; */
-    color: rgb(224, 97, 41);
+    color: black;
+
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
@@ -228,33 +143,20 @@ p {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin-bottom: 2rem;
 }
 
 .button:hover {
-    color: black;
-    background-color: #F7ED3E;
+
+    color: rgb(224, 97, 41);
+    ;
+    background-color: #FAF9F6;
 }
 
 .button:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
 }
-
-@media (min-width: 768px) {
-    .button {
-        min-width: 120px;
-        padding: 0 25px;
-    }
-}
-
-/* .button:active {
-    border-bottom: 6px solid transparent;
-    color: #041B78;
-}
-
-.button:hover {
-    color: #F7ED3E;
-} */
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  SPECH  BUBBLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -305,26 +207,28 @@ p {
 
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* background-color: #F3F6FB; */
+    color: black;
     text-align: center;
-    border-radius: 10px;
+    height: 5rem;
+
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUEERIES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media only screen and (min-width: 765px) {
     main {
-        /* background-image: url(assets/img/green-lego.jpg); */
         background-color: #FAF9F6;
-        /* margin-top: 1rem; */
         border-radius: 10px;
         border-left: 1px solid gray;
         border-right: 1px solid black;
         border-top: 1px solid gray;
     }
-
 
     h1 {
         font-size: 3rem;
@@ -340,9 +244,13 @@ footer {
         min-height: 22rem;
     }
 
-
     .row {
         padding-top: 0rem;
+    }
+
+    .button {
+        min-width: 120px;
+        padding: 0 25px;
     }
 }
 
@@ -353,7 +261,6 @@ footer {
     }
 
     .sprechblase4 {
-
         min-height: 18rem;
     }
 
@@ -361,15 +268,10 @@ footer {
         font-size: 3rem;
     }
 
+
+
     .container-fluid {
-
         max-width: 90vw;
-
-
         margin: 0 auto;
     }
-
-
-
-
 }
