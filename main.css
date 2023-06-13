@@ -11,8 +11,6 @@
 }
 
 body {
-    /* background-color: black; */
-
     background-color: #F3F6FB;
 }
 
@@ -34,7 +32,6 @@ header {
     display: flex;
     align-items: center;
     height: 5rem;
-    /* background-color: black; */
     background-color: #F3F6FB;
 }
 
@@ -125,13 +122,11 @@ p {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUTTONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .button {
-
     background-color: #F7ED3E;
     border: 2px solid #422800;
     border-radius: 10px;
     box-shadow: #422800 4px 4px 0 0;
     color: black;
-
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
@@ -147,9 +142,7 @@ p {
 }
 
 .button:hover {
-
     color: rgb(224, 97, 41);
-    ;
     background-color: #FAF9F6;
 }
 
@@ -158,9 +151,9 @@ p {
     transform: translate(2px, 2px);
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  SPECH  BUBBLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  SPEECH  BUBBLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.sprechblase4 {
+.sprechblase {
     padding: 1rem;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -175,8 +168,8 @@ p {
     align-items: center;
 }
 
-.sprechblase4:after,
-.sprechblase4:before {
+.sprechblase:after,
+.sprechblase:before {
     top: 100%;
     left: 50%;
     border: solid transparent;
@@ -187,21 +180,21 @@ p {
     pointer-events: none;
 }
 
-.sprechblase4:after {
+.sprechblase:after {
     border-color: rgba(136, 183, 213, 0);
     border-top-color: white;
     border-width: 20px;
     margin-left: -20px;
 }
 
-.sprechblase4:before {
+.sprechblase:before {
     border-color: rgba(194, 225, 245, 0);
     border-top-color: black;
     border-width: 26px;
     margin-left: -26px;
 }
 
-.sprechblase4 p {
+.sprechblase p {
     margin-bottom: 0;
 }
 
@@ -211,8 +204,6 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    /* background-color: black; */
-    /* background-color: #F3F6FB; */
     color: black;
     text-align: center;
     height: 5rem;

@@ -1,6 +1,6 @@
 function loadJokes() {
-    getJoke()
-    getJokeOne()
+    getJoke();
+    getJokeOne();
 }
 
 const btnEl = document.getElementById("btn");
@@ -13,25 +13,23 @@ const options = {
     headers: {
         "X-Api-key": apiKey,
     },
-}
+};
 
-const apiURL = "https://api.api-ninjas.com/v1/chucknorris?limit=1"
+const apiURL = "https://api.api-ninjas.com/v1/chucknorris?limit=1";
 
 async function getJoke() {
-
     jokeEl.innerText = "Updating";
     btnEl.disabled = true;
     btnEl.innerText = "Loading";
-    const response = await fetch(apiURL, options)
-    const data = await response.json()
+    const response = await fetch(apiURL, options);
+    const data = await response.json();
 
     btnEl.disabled = false;
     btnEl.innerText = "Tell a joke";
-
     jokeEl.innerText = data.joke;
-}
+};
 
-btnEl.addEventListener("click", getJoke)
+btnEl.addEventListener("click", getJoke);
 
 
 
@@ -46,27 +44,27 @@ const optionsOne = {
     headers: {
         "X-Api-key": apiKeyOne,
     },
-}
+};
 
 const apiURLOne = "https://api.api-ninjas.com/v1/dadjokes?limit=1"
 
 
 async function getJokeOne() {
 
-    jokeOneEl.innerText = "Updating"
+    jokeOneEl.innerText = "Updating";
     btnOneEl.disabled = true;
     btnOneEl.innerText = "Loading";
 
-    const responseOne = await fetch(apiURLOne, optionsOne)
-    const dataOne = await responseOne.json()
+    const responseOne = await fetch(apiURLOne, optionsOne);
+    const dataOne = await responseOne.json();
 
     btnOneEl.disabled = false;
     btnOneEl.innerText = "Tell me a joke";
 
     jokeOneEl.innerText = dataOne[0].joke;
-}
+};
 
-btnOneEl.addEventListener("click", getJokeOne)
+btnOneEl.addEventListener("click", getJokeOne);
 
-// !!!!!!!!!!!!!!!!!!!!! TEST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
