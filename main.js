@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 function loadJokes() {
     getJoke();
     getJokeOne();
@@ -27,11 +29,9 @@ async function getJoke() {
     btnEl.disabled = false;
     btnEl.innerText = "Tell a joke";
     jokeEl.innerText = data.joke;
-};
+}
 
 btnEl.addEventListener("click", getJoke);
-
-
 
 
 const btnOneEl = document.getElementById("btn-one");
@@ -46,8 +46,7 @@ const optionsOne = {
     },
 };
 
-const apiURLOne = "https://api.api-ninjas.com/v1/dadjokes?limit=1"
-
+const apiURLOne = "https://api.api-ninjas.com/v1/dadjokes?limit=1";
 
 async function getJokeOne() {
 
@@ -62,7 +61,7 @@ async function getJokeOne() {
     btnOneEl.innerText = "Tell me a joke";
 
     jokeOneEl.innerText = dataOne[0].joke;
-};
+}
 
 btnOneEl.addEventListener("click", getJokeOne);
 
